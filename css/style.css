@@ -1,0 +1,1294 @@
+/*====================================================
+                DEFAULT VALUES:
+
+                Font Family                 : Roboto Condensed
+
+                Greenish Blue               : #34c6d3
+                Steel Gray                  : #41464b
+                Blue Bayoux                 : #64707b
+                White                       : #fff
+                Black                       : #000
+
+======================================================*/
+
+
+/* General CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+
+
+/*====================================================
+                        HOME
+======================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/beach.jpg");
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+#home-heading h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+
+}
+
+
+/*====================================================
+                        PARALLAX (Generic)
+======================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*====================================================
+                        BUTTONS (Generic)
+======================================================*/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+    border-radius: 5px;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3;
+    color: #fff;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+/*====================================================
+                       ANIMATE
+======================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-cover {
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+#home-heading {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+
+/*====================================================
+                       CONTENT (Generic)
+======================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+
+/*====================================================
+                    Travel Guide
+======================================================*/
+
+.travel_guide-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.travel_guide-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.travel_guide-item-desc p {
+    text-align: center;
+}
+
+
+/*====================================================
+                       ABOUT
+======================================================*/
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/santorini2.jpg);
+    border-left: 200px solid #fff;
+    border-top: 700px solid transparent;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+
+/*====================================================
+                    Destinations
+======================================================*/
+
+.row.no-gutters [class*=col-] {
+    /*padding-left: 0;
+    padding-right: 0;*/
+    padding: 10px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-wrapper h4 {
+    display: block;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    border-radius: 10px;
+
+}
+
+.img-wrapper img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: pointer;
+
+}
+
+
+/*====================================================
+                      Island
+======================================================*/
+
+.destinations-island {
+    margin: 0 10px;
+}
+
+.destinations-island-info {
+    padding: 10px 0 30px 0;
+}
+
+
+/*====================================================
+                       SOCIAL
+======================================================*/
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #64707b;
+}
+
+.icon-white i {
+    color: #fff;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+
+/*====================================================
+                    Quote-FirstCover
+======================================================*/
+
+#home-middle-cover {
+    background-image: url("../img/varka1b.jpg");
+}
+
+#quote .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*====================================================
+                       OFFERS
+======================================================*/
+
+.offers-box {
+    border: 3px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.offers-title {
+    background-color: #34c6d3;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+h3.offers-value {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.offers-value sup {
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+ul.offers-spec {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+ul.offers-spec li p {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.offers-box-lg {
+    padding: 90px 0;
+    margin: 0;
+    background-color: #34c6d3;
+}
+
+.offers-box-lg h4.offers-title {
+    color: #34c6d3;
+    background-color: #fff;
+}
+
+.offers-box-lg ul.offers-spec li p {
+    color: #fff;
+}
+
+
+/*====================================================
+                       Second Cover
+======================================================*/
+
+#second-cover {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../img/sea-sun.jpg");
+}
+
+#second .content-box{
+    padding: 200px;
+}
+
+
+/*====================================================
+                       Information
+======================================================*/
+
+
+.information-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.information-item p {
+    text-align: center;
+}
+
+
+/*====================================================
+                       CONTACT
+======================================================*/
+
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+address strong { font-size: 16px; }
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 5px;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+/*====================================================
+                       FOOTER
+======================================================*/
+
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
+
+
+/*====================================================
+                       NAVIGATION
+======================================================*/
+
+.navbar {
+    padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.greeceinspire-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+
+.greeceinspire-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav>li>a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+    background: none;
+    color: #34c6d3;
+}
+
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    max-height: none !important;
+}
+
+.greeceinspire-top-nav ul.navbar-nav>li.active>a {
+    color: #34c6d3;
+}
+
+/*====================================================
+                    NAVIGATION-PACKAGE
+======================================================*/
+
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown-toggle::after {
+     transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+
+/*====================================================
+                        SantoriniPage
+======================================================*/
+
+#santorini {
+    height: 100%;
+}
+
+#santorini-cover {
+    height: 100%;
+    background-image: url("../img/santorini/santorini_8.jpg");
+}
+
+#destisla-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#destisla-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#destisla-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+#destisla-heading h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+
+}
+
+/*************Section 1,3**********************/
+.section-1 {
+    padding: 15vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .travel img {
+    opacity: 0.9;
+    width: 80%;
+    border-radius: 3.2px;
+}
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 6.4px 0;
+    font-size: 32px;
+}
+
+.section-1 .row .col-md-6 .panel p {
+    font-size: 14.4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*********** gia section2***************/
+.section-2 {
+    padding: 10vmin 0vmin;
+}
+
+.section-2 .row .col-md-6 .travel img {
+    opacity: 0.9;
+    width: 80%;
+    border-radius: 3.2px;
+}
+
+.section-2 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-2 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    right: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-2 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 6.4px 0;
+    font-size: 32px;
+}
+
+.section-2 .row .col-md-6 .panel p {
+    font-size: 14.4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/****************endiameso diaxoristiko***************/
+#santorini-middle {
+    background-image: url("../img/santorini/santorini_1.jpg");
+}
+
+#santorini-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.destisla blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.destisla blockquote p {
+    color: #fff;
+    padding: 100px;
+}
+
+.destisla blockquote::before,
+.destisla blockquote::after {
+    font-size: 100px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.destisla blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 200px;
+}
+
+.destisla blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 200px;
+}
+
+/*********************paketa diakopon(gia ola ta arxeia)***************************/
+.holidays-box {
+    border: 3px solid #34c6d3;
+    margin: -10px;
+}
+
+.holidays-img{
+    position: relative;
+}
+
+.holidays-img img{
+    width:100%;
+    height: 300px;
+}
+
+h4.holidays-title {
+    color: #41464b;
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.holidays-details {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+.holidays-details p {
+    font-weight: 400;
+}
+
+.holidays-box-lg {
+    margin: 15px 0;
+}
+
+.holidays-box-lg h4.holidays-title {
+    color: #41464b;
+}
+
+/*====================================================
+                        RhodosPage
+======================================================*/
+
+#rhodos {
+    height: 100%;
+}
+
+#rhodos-cover {
+    height: 100%;
+    background-image: url("../img/rhodos/rhodos_2.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#rhodos-middle {
+    background-image: url("../img/rhodos/rhodos_1.jpg");
+}
+
+#rhodos-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        CretaPage
+======================================================*/
+
+#creta {
+    height: 100%;
+}
+
+#creta-cover {
+    height: 100%;
+    background-image: url("../img/kriti/creta_12.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#creta-middle {
+    background-image: url("../img/kriti/creta_11.jpg");
+}
+
+#creta-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        MikonosPage
+======================================================*/
+
+#mikonos {
+    height: 100%;
+}
+
+#mikonos-cover {
+    height: 100%;
+    background-image: url("../img/mikonos/mikonos_3.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#mikonos-middle {
+    background-image: url("../img/mikonos/mikonos_8.jpg");
+}
+
+#mikonos-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        SkiathosPage
+======================================================*/
+
+#skiathos {
+    height: 100%;
+}
+
+#skiathos-cover {
+    height: 100%;
+    background-image: url("../img/skiathos/skiathos_4.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#skiathos-middle {
+    background-image: url("../img/skiathos/skiathos_1.jpg");
+}
+
+#skiathos-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        PaxoiPage
+======================================================*/
+
+#paxoi {
+    height: 100%;
+}
+
+#paxoi-cover {
+    height: 100%;
+    background-image: url("../img/paxi-antipaxi/paxoi_10.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#paxoi-middle {
+    background-image: url("../img/paxi-antipaxi/paxoi_12.jpg");
+}
+
+#paxoi-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        ZakinthosPage
+======================================================*/
+
+#zakinthos {
+    height: 100%;
+}
+
+#zakinthos-cover {
+    height: 100%;
+    background-image: url("../img/zakinthos/zakinthos_4.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#zakinthos-middle {
+    background-image: url("../img/zakinthos/zakinthos_3.jpg");
+}
+
+#zakinthos-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        PilioPage
+======================================================*/
+
+#pilio {
+    height: 100%;
+}
+
+#pilio-cover {
+    height: 100%;
+    background-image: url("../img_two/pilio/pilio_3.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#pilio-middle {
+    background-image: url("../img_two/pilio/pilio_10.jpg");
+}
+
+#pilio-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        OlimposPage
+======================================================*/
+
+#olimpos {
+    height: 100%;
+}
+
+#olimpos-cover {
+    height: 100%;
+    background-image: url("../img_two/olimpos/olimpos_8.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#olimpos-middle {
+    background-image: url("../img_two/olimpos/olimpos_5.jpg");
+}
+
+#olimpos-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                        MeteoraPage
+======================================================*/
+
+#meteora {
+    height: 100%;
+}
+
+#meteora-cover {
+    height: 100%;
+    background-image: url("../img_two/meteora/meteora_2.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#meteora-middle {
+    background-image: url("../img_two/meteora/meteora_5.jpg");
+}
+
+#meteora-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                    Elati-PertouliPage
+======================================================*/
+
+#elati-pertouli {
+    height: 100%;
+}
+
+#elati-pertouli-cover {
+    height: 100%;
+    background-image: url("../img_two/elati-pertouli/elati-pertouli_9.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#elati-pertouli-middle {
+    background-image: url("../img_two/elati-pertouli/elati-pertouli_3.jpg");
+}
+
+#elati-pertouli-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                 Ioannina-ZagoroxoriaPage
+======================================================*/
+
+#ioannina-zagoroxoria {
+    height: 100%;
+}
+
+#ioannina-zagoroxoria-cover {
+    height: 100%;
+    background-image: url("../img_two/ioannina-zagoroxoria/ioannina-zagoroxoria_11.jpg");
+}
+
+/*endiameso diaxoristiko*/
+#ioannina-zagoroxoria-middle {
+    background-image: url("../img_two/ioannina-zagoroxoria/ioannina-zagoroxoria_10.jpg");
+}
+
+#ioannina-zagoroxoria-middle .content-box {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*====================================================
+                 PACKAGE-STYLE
+======================================================*/
+#package {
+    height: 70%;
+}
+
+#sant_package_2-cover {
+    height: 100%;
+    background-image: url("../img/santorini/santorini_10.jpg");
+}
+
+#sant_package_1-cover {
+    height: 100%;
+    background-image: url("../img/santorini/santorini_13.jpg");
+}
+
+#package-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.package-box {
+    border: 1px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+.package-box h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    color: #41464b;
+}
+
+.package-box strong{
+    font-size: 18px;
+    font-weight: 400;
+    color: #41464b;
+
+}
+
+.package-box ul{
+    margin-bottom: 30px;
+}
+
+.package-box ul li{
+    margin: 15px 50px 10px 50px;
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.package-box p {
+    margin: 15px 50px 15px 50px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*====================================================
+                        FORM
+======================================================*/
+.booking-section {
+	position: relative;
+	height: 100vh;
+}
+
+.booking-section .booking-section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+
+	background-image: url('../img/beach_1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form {
+	background-color: #fff;
+	max-width: 768px;
+	width: 100%;
+	margin: auto;
+	padding: 30px;
+	border-radius: 3px;
+}
+
+.booking-form .form-header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.booking-form .form-header h1 {
+	font-family: 'Cardo', serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 38px;
+	color: #41464b;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+	background-color: #fff;
+	height: 50px;
+	padding: 0px 20px;
+	border: 1px solid #e1e1e1;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+	color: #6b6b6d;
+	font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: #e1e1e1;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: #e1e1e1;
+}
+
+.booking-form .form-control::placeholder {
+	color: #e1e1e1;
+}
+
+.booking-form .form-control:focus {
+	border-color: #34c6d3;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: #e1e1e1;
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 24px;
+	text-align: center;
+	pointer-events: none;
+	background: #e1e1e1;
+	height: 50px;
+	line-height: 50px;
+	color: rgba(107, 107, 109, 0.3);
+	font-size: 14px;
+	border-radius: 0px 3px 3px 0px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form select.form-control+.select-arrow::after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form select.form-control:focus+.select-arrow {
+	background: #34c6d3;
+	color: #fff;
+}
+
+.booking-form .form-label {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 3px;
+	display: inline-block;
+	color: #34c6d3;
+	text-transform: capitalize;
+}
+
+.booking-form .in-out {
+	position: absolute;
+	font-size: 24px;
+	color: #34c6d3;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	z-index: 20;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	bottom: 25px;
+}
+
+.booking-form .form-btn {
+	margin-top: 23px;
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #34c6d3;
+	font-weight: 700;
+	height: 50px;
+	border: none;
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	text-transform: capitalize;
+	border-radius: 3px;
+}
